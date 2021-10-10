@@ -19,9 +19,9 @@
 *,
 *::before,
 *::after {
-  padding: 0;
-  margin: 0;
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -37,25 +37,26 @@ body {
 
 .background-shape {
   background: var(--gradient);
-  position: absolute;
-  width: 420px;
+  position: fixed;
 }
 
 .shape-one {
   border-bottom-left-radius: 999px;
   border-bottom-right-radius: 999px;
+
   height: 720px;
   left: -220px;
   top: -250px;
+  width: 420px;
 }
 
 .shape-two {
   border-top-left-radius: 999px;
-  bottom: -300px;
   opacity: 0.06;
-  left: 50%;
-  right: -100px;
+
+  bottom: -300px;
   height: 500px;
+  right: -1px;
   width: 220px;
 }
 
@@ -70,9 +71,10 @@ body {
   background-color: #fff;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  height: 450px;
   margin: 0 22%;
   position: absolute;
+
+  height: 450px;
   top: 80px;
   width: 230px;
 }
@@ -80,8 +82,9 @@ body {
 .phone__screen {
   background-color: var(--color-light-grayish-violet);
   border-radius: 20px;
-  position: relative;
   margin: 4%;
+  position: relative;
+
   height: 96%;
   width: auto;
 }
@@ -89,19 +92,21 @@ body {
 .app__header {
   background: linear-gradient(80deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
   border-radius: 20px 20px 5px 5px;
-  height: 70px;
   position: relative;
+
+  height: 70px;
 }
 
 .phone__notch {
-  position: relative;
-  top: -1px;
-  margin: 0 auto;
-  width: 50%;
-  height: 15px;
   background-color: #fff;
-  border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+
+  height: 15px;
+  top: -1px;
+  width: 50%;
 }
 
 /* - - - - - - - - Contact Section - - - - - - - - */
@@ -116,51 +121,55 @@ body {
 }
 
 .contact__avatar {
-  top: -3px;
-  left: 2px;
-  height: 24px;
-  width: 24px;
-  border-radius: 24px;
-  position: relative;
-  border-style: solid;
   border-color: #fff;
+  border-style: solid;
+  border-radius: 24px;
   border-width: 1px;
+  position: relative;
+
+  height: 24px;
+  left: 2px;
+  top: -3px;
+  width: 24px;
 }
 
 .contact {
   position: relative;
-  left: 8px;
-  height: 40px;
   line-height: 0.4rem;
+
+  height: 40px;
+  left: 8px;
 }
 
 .contact__name {
-  font-size: 10px;
   color: #fff;
+  font-size: 10px;
   font-weight: 400;
 }
 
 .contact__availability {
-  font-size: 8px;
   color: var(--color-pale-violet);
+  font-size: 8px;
 }
 
-.dots {
+.more__options {
   display: flex;
   flex-direction: column;
+  position: relative;
+
   height: 20px;
-  width: 10px;
   left: 76px;
   top: 4px;
-  position: relative;
+  width: 10px;
 }
 
 .dot {
   background-color: #fff;
-  height: 2px;
-  width: 2px;
   border-radius: 2px;
   margin: 1px;
+
+  height: 2px;
+  width: 2px;
 }
 
 /* - - - - - - - - Messages - - - - - - - - */
@@ -181,6 +190,7 @@ body {
 .msg__received {
   background-color: #e9ecef;
   color: var(--color-moderate-violet);
+
   width: 50%;
 }
 
@@ -193,63 +203,66 @@ body {
 }
 
 .msg__sent-one {
-  width: 106px;
   left: 90px;
+  width: 106px;
 }
 
 .msg__sent-two {
-  width: 66px;
   left: 130px;
+  width: 66px;
 }
 
 .msg__image__container {
   display: flex;
   flex-direction: row;
-  left: 78px;
   position: relative;
+
+  left: 78px;
 }
 
 .msg__image {
+  border-radius: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   margin: 8px 6px 6px 0;
-  width: 38px;
+
   height: 38px;
-  border-radius: 10px;
+  width: 38px;
 }
 
 /* - - - - - - - - Payment - - - - - - - - */
 
 .msg__payment {
-  color: #fff;
-  font-size: 6px;
-
-  display: flex;
-  height: auto;
-  margin: 4px 8px;
-  padding: 8px;
-  width: 140px;
-
   background: linear-gradient(90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
   border-radius: 10px 10px 10px 2px;
+  color: #fff;
+  display: flex;
+  font-size: 6px;
+  margin: 4px 8px;
+  padding: 8px;
+
+  height: auto;
+  width: 140px;
 }
 
 .circle {
   border: solid 1px var(--color-very-light-magenta);
   border-radius: 10px;
+
   height: 10px;
   width: 10px;
 }
 
 .duration {
   position: relative;
-  top: 2px;
+
   left: 8px;
+  top: 2px;
 }
 
 .cost {
-  position: relative;
   font-size: 10px;
   font-weight: 500;
+  position: relative;
 }
 
 .cost-first {
@@ -263,33 +276,36 @@ body {
 /* - - - - - - - - Input - - - - - - - - */
 
 .input {
+  background-color: #fff;
+  border-radius: 20px;
   display: flex;
   margin: 10px auto;
+
   width: 94%;
   height: 28px;
-  border-radius: 20px;
-  background-color: #fff;
 }
 
 .input__text {
+  color: var(--color-grayish-blue);
   font-size: 6px;
   padding: 10px 14px;
-  color: var(--color-grayish-blue);
 }
 
 .submit {
-  position: relative;
-  height: 22px;
-  width: 22px;
-  border-radius: 22px;
   background-color: var(--color-very-dark-desaturated-violet);
+  border-radius: 22px;
+  position: relative;
+
   left: 98px;
+  height: 22px;
   top: 3px;
+  width: 22px;
 }
 
 .submit__arrow {
-  position: relative;
   color: #fff;
+  position: relative;
+
   left: 3px;
   top: 3px;
 }
@@ -303,15 +319,15 @@ body {
 
 .title {
   color: var(--color-very-dark-desaturated-violet);
-  font-weight: 500;
   font-size: 45px;
+  font-weight: 500;
 }
 
 .about {
-  margin: 20px;
-  font-size: 18px;
   color: var(--color-dark-grayish-violet);
+  font-size: 18px;
   line-height: 1.8rem;
+  margin: 20px;
 }
 
 .attribution {
@@ -332,6 +348,7 @@ body {
   .shape-one {
     border-bottom-left-radius: 999px;
     border-bottom-right-radius: 999px;
+
     height: 700px;
     left: -200px;
     top: -250px;
@@ -339,15 +356,16 @@ body {
 
   .shape-two {
     border-top-right-radius: 999px;
+
     bottom: -200px;
+    height: 500px;
     left: 50%;
     right: -100px;
-    height: 500px;
   }
 
   .phone {
-    top: 120px;
     margin-left: 20%;
+    top: 120px;
   }
 
   .simple-booking {
@@ -368,6 +386,7 @@ body {
   .shape-one {
     border-bottom-left-radius: 999px;
     border-bottom-right-radius: 999px;
+
     left: -100px;
     top: -20px;
   }
@@ -379,27 +398,31 @@ body {
   }
 
   .phone {
-    top: 120px;
     margin-left: 12%;
+
+    top: 120px;
   }
 
   .simple-booking {
-    width: 35%;
-    margin-top: 18%;
     margin-left: 42.5%;
+    margin-top: 18%;
     text-align: left;
+
+    width: 35%;
   }
 }
 
 @media only screen and (min-width: 1025px) {
   .phone {
-    top: 120px;
     margin-left: 17.65%;
+
+    top: 120px;
   }
 
   .simple-booking {
-    width: 35%;
-    margin-top: 15%;
     margin-left: 42.5%;
+    margin-top: 15%;
+
+    width: 35%;
   }
 }
