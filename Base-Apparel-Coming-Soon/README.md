@@ -10,6 +10,9 @@ Thanks for checking out this front-end coding challenge.
 
 **To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
 
+## Live Site
+https://base-apparel-coming-soon-seven-wheat.vercel.app/
+
 ## The challenge
 
 Your challenge is to build out this coming soon page and get it looking as close to the design as possible.

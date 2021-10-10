@@ -10,6 +10,9 @@ Thanks for checking out this front-end coding challenge.
 
 **To do this challenge, you need a strong understanding of HTML and CSS.**
 
+## Live Site
+https://chat-app-css-illustration-master-one.vercel.app/
+
 ## The challenge
 
 Your challenge is to build out this feature illustration using HTML & CSS and get it looking as close to the design as possible.
