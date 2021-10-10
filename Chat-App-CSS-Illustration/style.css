@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+:root {
+  --color-pale-violet: hsl(276, 100%, 81%);
+  --color-moderate-violet: hsl(276, 55%, 52%);
+  --color-desaturated-dark-violet: hsl(271, 15%, 43%);
+  --color-grayish-blue: hsl(206, 6%, 79%);
+  --color-very-dark-desaturated-violet: hsl(271, 36%, 24%);
+  --color-dark-grayish-violet: hsl(270, 7%, 64%);
+
+  --gradient: linear-gradient(135deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-grayish-violet: hsl(270, 20%, 96%);
+  --color-dark-desaturated-violet: hsl(271, 36%, 24%);
+  --color-very-light-magenta: hsl(289, 100%, 72%);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-light-grayish-violet);
+  font-family: "Rubik", sans-serif;
+}
+
+/* - - - - - - - - Background - - - - - - - - */
+
+.background-shape {
+  background: var(--gradient);
+  position: absolute;
+  width: 420px;
+}
+
+.shape-one {
+  border-bottom-left-radius: 999px;
+  border-bottom-right-radius: 999px;
+  height: 720px;
+  left: -220px;
+  top: -250px;
+}
+
+.shape-two {
+  border-top-left-radius: 999px;
+  bottom: -300px;
+  opacity: 0.06;
+  left: 50%;
+  right: -100px;
+  height: 500px;
+  width: 220px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* - - - - - - - - Phone Layout - - - - - - - - */
+
+.phone {
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 450px;
+  margin: 0 22%;
+  position: absolute;
+  top: 80px;
+  width: 230px;
+}
+
+.phone__screen {
+  background-color: var(--color-light-grayish-violet);
+  border-radius: 20px;
+  position: relative;
+  margin: 4%;
+  height: 96%;
+  width: auto;
+}
+
+.app__header {
+  background: linear-gradient(80deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  border-radius: 20px 20px 5px 5px;
+  height: 70px;
+  position: relative;
+}
+
+.phone__notch {
+  position: relative;
+  top: -1px;
+  margin: 0 auto;
+  width: 50%;
+  height: 15px;
+  background-color: #fff;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/* - - - - - - - - Contact Section - - - - - - - - */
+
+.contact__container {
+  display: flex;
+  margin: 1.2rem 0.5rem 0 0.5rem;
+}
+
+.arrow {
+  color: #fff;
+}
+
+.contact__avatar {
+  top: -3px;
+  left: 2px;
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  position: relative;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 1px;
+}
+
+.contact {
+  position: relative;
+  left: 8px;
+  height: 40px;
+  line-height: 0.4rem;
+}
+
+.contact__name {
+  font-size: 10px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.contact__availability {
+  font-size: 8px;
+  color: var(--color-pale-violet);
+}
+
+.dots {
+  display: flex;
+  flex-direction: column;
+  height: 20px;
+  width: 10px;
+  left: 76px;
+  top: 4px;
+  position: relative;
+}
+
+.dot {
+  background-color: #fff;
+  height: 2px;
+  width: 2px;
+  border-radius: 2px;
+  margin: 1px;
+}
+
+/* - - - - - - - - Messages - - - - - - - - */
+
+.msg__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.msg {
+  border-radius: 5px;
+  font-size: 7px;
+  margin: 4px 8px;
+  padding: 5px;
+}
+
+.msg__received {
+  background-color: #e9ecef;
+  color: var(--color-moderate-violet);
+  width: 50%;
+}
+
+.msg__sent {
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: var(--color-desaturated-dark-violet);
+  position: relative;
+  text-align: right;
+}
+
+.msg__sent-one {
+  width: 106px;
+  left: 90px;
+}
+
+.msg__sent-two {
+  width: 66px;
+  left: 130px;
+}
+
+.msg__image__container {
+  display: flex;
+  flex-direction: row;
+  left: 78px;
+  position: relative;
+}
+
+.msg__image {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin: 8px 6px 6px 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+}
+
+/* - - - - - - - - Payment - - - - - - - - */
+
+.msg__payment {
+  color: #fff;
+  font-size: 6px;
+
+  display: flex;
+  height: auto;
+  margin: 4px 8px;
+  padding: 8px;
+  width: 140px;
+
+  background: linear-gradient(90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  border-radius: 10px 10px 10px 2px;
+}
+
+.circle {
+  border: solid 1px var(--color-very-light-magenta);
+  border-radius: 10px;
+  height: 10px;
+  width: 10px;
+}
+
+.duration {
+  position: relative;
+  top: 2px;
+  left: 8px;
+}
+
+.cost {
+  position: relative;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.cost-first {
+  left: 50px;
+}
+
+.cost-second {
+  left: 60px;
+}
+
+/* - - - - - - - - Input - - - - - - - - */
+
+.input {
+  display: flex;
+  margin: 10px auto;
+  width: 94%;
+  height: 28px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.input__text {
+  font-size: 6px;
+  padding: 10px 14px;
+  color: var(--color-grayish-blue);
+}
+
+.submit {
+  position: relative;
+  height: 22px;
+  width: 22px;
+  border-radius: 22px;
+  background-color: var(--color-very-dark-desaturated-violet);
+  left: 98px;
+  top: 3px;
+}
+
+.submit__arrow {
+  position: relative;
+  color: #fff;
+  left: 3px;
+  top: 3px;
+}
+
+/* - - - - - - - - Main Heading - - - - - - - - */
+
+.simple-booking {
+  margin-top: 580px;
+  text-align: center;
+}
+
+.title {
+  color: var(--color-very-dark-desaturated-violet);
+  font-weight: 500;
+  font-size: 45px;
+}
+
+.about {
+  margin: 20px;
+  font-size: 18px;
+  color: var(--color-dark-grayish-violet);
+  line-height: 1.8rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 481px) {
+  .background-shape {
+    height: 92vh;
+    width: 420px;
+  }
+
+  .shape-one {
+    border-bottom-left-radius: 999px;
+    border-bottom-right-radius: 999px;
+    height: 700px;
+    left: -200px;
+    top: -250px;
+  }
+
+  .shape-two {
+    border-top-right-radius: 999px;
+    bottom: -200px;
+    left: 50%;
+    right: -100px;
+    height: 500px;
+  }
+
+  .phone {
+    top: 120px;
+    margin-left: 20%;
+  }
+
+  .simple-booking {
+    margin: 600px 20px 0 20px;
+  }
+
+  .about {
+    margin: 20px 0;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .background-shape {
+    height: 92vh;
+    width: 420px;
+  }
+
+  .shape-one {
+    border-bottom-left-radius: 999px;
+    border-bottom-right-radius: 999px;
+    left: -100px;
+    top: -20px;
+  }
+
+  .shape-two {
+    bottom: -1px;
+    left: 80%;
+    right: -144px;
+  }
+
+  .phone {
+    top: 120px;
+    margin-left: 12%;
+  }
+
+  .simple-booking {
+    width: 35%;
+    margin-top: 18%;
+    margin-left: 42.5%;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .phone {
+    top: 120px;
+    margin-left: 17.65%;
+  }
+
+  .simple-booking {
+    width: 35%;
+    margin-top: 15%;
+    margin-left: 42.5%;
+  }
+}
